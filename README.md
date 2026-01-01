@@ -2,17 +2,6 @@
 
 A comprehensive Java-based digital wallet application designed to manage user accounts, handle financial transactions, and provide secure authentication with a command-driven architecture.
 
-## Table of Contents
-
-- [Overview](#overview)
-- [Features](#features)
-- [Architecture](#architecture)
-- [Project Structure](#project-structure)
-- [Technology Stack](#technology-stack)
-- [Getting Started](#getting-started)
-- [Usage](#usage)
-- [Design Patterns](#design-patterns)
-- [Code Structure](#code-structure)
 
 ## Overview
 

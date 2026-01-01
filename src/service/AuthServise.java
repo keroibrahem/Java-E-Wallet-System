@@ -38,7 +38,7 @@ public class AuthServise {
         Account account = repo.findByUsername(username);
 
         if (account != null && account.getPassword().equals(password)) {
-            account.setIsLogin("Yes");
+            account.setIsLogin(true);
             return account; // Login successful
         }
         return null; // Login failed

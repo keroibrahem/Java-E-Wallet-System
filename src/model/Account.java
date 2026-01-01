@@ -7,7 +7,7 @@ public class Account {
     private String accountType;
     private String phone;
     private int age;
-    private String isLogin;
+    private boolean isLogin;
 
     public Account(String username, String password, double balance, int age, String phone) {
         this.username = username;
@@ -16,7 +16,7 @@ public class Account {
         this.accountType = "User";
         this.age = age;
         this.phone = phone;
-        this.isLogin = "No";
+        this.isLogin = false;
     }
 
     public String getUsername() {
@@ -44,6 +44,10 @@ public class Account {
     }
     
     
+    public boolean getIsLogin() {
+        return isLogin;
+    }
+    
     public void setBalance(double balance) {
         this.balance = balance;
     }
@@ -63,7 +67,7 @@ public class Account {
         this.phone = phone;
     }
 
-    public void setIsLogin(String isLogin) {
+    public void setIsLogin(boolean isLogin) {
         this.isLogin = isLogin;
     }
 }
