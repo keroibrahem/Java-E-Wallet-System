@@ -5,6 +5,19 @@ import java.util.List;
 import java.util.Map;
 import java.util.ArrayList;
 
+/**
+ * AccountRepository - Repository pattern implementation for Account management
+ * 
+ * Improvements & Enhancements:
+ * ✅ Added HashMap for O(1) username lookup performance (instead of O(n) with ArrayList only)
+ * ✅ Maintains both ArrayList and HashMap for data integrity and efficient searching
+ * ✅ Added exception handling and null checks in critical methods
+ * ✅ Added deleteAccount() method for complete CRUD operations
+ * ✅ Ensures unique usernames using HashMap containsKey() check
+ * 
+ * @author Development Team
+ * @version 2.0
+ */
 public class AccountRepository {
     private List<Account> accounts;
     private Map<String, Account> accountsMap;
